@@ -7,6 +7,10 @@
 
 import Foundation
 
+protocol StudyInteracting: AnyObject {
+    //implementar
+}
+
 class StudyInteractor {
     private let presenter: StudyPresenter
     
@@ -14,5 +18,8 @@ class StudyInteractor {
         self.presenter = presenter
         
     }
+}
+
+extension StudyInteractor: StudyInteracting {
     
 }

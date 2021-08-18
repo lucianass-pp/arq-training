@@ -12,7 +12,7 @@ import UIKit
 
 class StudyFactory {
   static func make()  -> UIViewController {
-        let presenter = StudyPresenter()
+        let presenter = StudyPresenter() // perguntar pra Jade pq a gente coloca o protocolo aqui na Factory ******
         let interactor = StudyInteractor(presenter: presenter)
         let viewController = StudyViewController(interactor: interactor)
         

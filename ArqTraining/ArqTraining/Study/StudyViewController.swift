@@ -9,7 +9,10 @@ import Foundation
 import UIKit
 
 //e referencia forte, tudo é baseado na view controller
-//
+
+protocol Displaying: AnyObject {
+    
+}
 
 class StudyViewController: UIViewController {
     private let interactor: StudyInteractor
@@ -22,4 +25,8 @@ class StudyViewController: UIViewController {
     required init?(coder: NSCoder) {
         nil
     }
+}
+
+extension StudyViewController: Displaying {
+    
 }
